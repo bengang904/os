@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <title>系统镜像 IPFS 下载站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 300px;
+            max-width: 80%;
+            text-align: center;  
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card h4 {
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .card .cid {
+            font-weight: bold;
+            margin: 10px 0;
+            color: #007bff;
+            cursor: pointer;
+            word-wrap: break-word; /* 自动换行 */
+            word-break: break-all; /* 强制换行 */
+            white-space: normal;   /* 确保多行显示 */
+        }
+
+        .card .filename {
+            font-style: italic;
+            color: #777;
+            word-wrap: break-word;
+            margin: 10px 0;
+        }
+
+        .card .description {
+            font-size: 14px;
+            color: #555;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .card .description.expanded {
+            -webkit-line-clamp: unset;
+            white-space: normal;
+        }
+
+        .card a {
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container" id="card-container">
+</div>
+
+<script>
+    fetch('cards.json')
+        .then(response => response.json()) 
+        .then(data => {
+            renderCards(data);
+        })
+        .catch(error => console.error('加载 JSON 文件出错：', error));
+    function renderCards(data) {
+        const container = document.getElementById('card-container');
+        data.forEach(cardData => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+            const cardContent = `
+                <img src="${cardData.icon}" alt="${cardData.name} 图标">
+                <h3>${cardData.name}</h3>
+                <p class="description" onclick="toggleDescription(this)">${cardData.description}</p>
+                <p class="cid" onclick="copyToClipboard('${cardData.cid}')">CID: ${cardData.cid}</p>
+                <p class="filename">文件名: ${cardData.filename}</p>
+                <h4>通过 IPFS 公共网关下载：</h4>
+                <a href="https://ipfs.io/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">ipfs.io下载</a>
+                <a href="https://cloudflare-ipfs.com/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">cloudflare-ipfs.com 下载</a>
+                <a href="https://infura-ipfs.io/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">infura-ipfs.io 下载</a>
+            `;
+
+            card.innerHTML = cardContent;
+            container.appendChild(card);
+        });
+    }
+    function copyToClipboard(text) {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('CID 已复制到剪贴板');
+    }
+    function toggleDescription(element) {
+        element.classList.toggle('expanded');
+    }
+</script>
+
+</body>
+</html>
