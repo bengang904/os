@@ -81,7 +81,7 @@
 
         .card .description {
             font-size: 14px;
-            color: #555;
+            color: #2f2f2f;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -129,9 +129,9 @@
             const cardContent = `
                 <img src="${cardData.icon}" alt="${cardData.name} 图标">
                 <h3>${cardData.name}</h3>
+                <p class="filename">详细文件名: ${cardData.filename}</p>
                 <p class="description" onclick="toggleDescription(this)">${cardData.description}</p>
                 <p class="cid" onclick="copyToClipboard('${cardData.cid}')">CID: ${cardData.cid}</p>
-                <p class="filename">文件名: ${cardData.filename}</p>
                 <h4>通过 IPFS 公共网关下载：</h4>
                 <p>官方网关：</p>
                 <a href="https://ipfs.io/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">ipfs.io下载</a>
