@@ -130,13 +130,13 @@
                 <img src="${cardData.icon}" alt="${cardData.name} 图标">
                 <h3>${cardData.name}</h3>
                 <p class="filename">详细文件名: ${cardData.filename}</p>
+                <p class="filesize">文件大小: ${cardData.filesize}</p>
                 <p class="description" onclick="toggleDescription(this)">${cardData.description}</p>
                 <p class="cid" onclick="copyToClipboard('${cardData.cid}')">CID: ${cardData.cid}</p>
-                <h4>通过 IPFS 公共网关下载：</h4>
-                <p>官方网关：</p>
-                <a href="https://ipfs.io/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">ipfs.io下载</a>
-                <p>网络限制备用网关：</p>
-                <a href="https://gateway.pinata.cloud/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">gateway.pinata.cloud 下载</a>
+                <h4>IPFS 文件下载：</h4>
+                <p>官方推荐：</p>
+                <a href="https://ipfs.io/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">通过 ipfs.io 公共网关下载</a>
+                <p>可复制 CID 在 IPFS 本地客户端进行下载</p>
             `;
 
             card.innerHTML = cardContent;
