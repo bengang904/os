@@ -134,9 +134,11 @@
                 <p class="description" onclick="toggleDescription(this)">${cardData.description}</p>
                 <p class="cid" onclick="copyToClipboard('${cardData.cid}')">CID: ${cardData.cid}</p>
                 <h4>IPFS 文件下载：</h4>
-                <p>官方推荐：</p>
-                <a href="https://ipfs.io/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">通过 ipfs.io 公共网关下载</a>
-                <p>可复制 CID 在 IPFS 本地客户端进行下载</p>
+                <p>❌不推荐使用：</p>
+                <a href="https://ipfs.io/ipfs/${cardData.cid}?filename=${cardData.filename}" target="_blank">通过 ipfs.io 公共网关下载文件</a>
+                <p>✔️推荐使用<a href="https://github.com/ipfs/ipfs-desktop/releases/download/v0.42.0/ipfs-desktop-setup-0.42.0-win-x64.exe" target="_blank">下载 Windows-IPFS 客户端</a></p>
+                <p>启动 IPFS 客户端后：</p>
+                <a href="http://${cardData.cid}.ipfs.localhost:8080/?filename=${cardData.filename}" target="_blank">通过 ipfs.localhost:8080 本地网关下载文件</a>
             `;
 
             card.innerHTML = cardContent;
